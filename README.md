@@ -4,6 +4,9 @@ Olá! Esse é um compilador escrito só por diversão!
 
 Baseado no "Writing an Interpreter in Go" de Thorsten Ball.
 
+## Visão Geral
+
+
 ## Análise Léxica (Linear)
 Análise léxica seria uma leitura de um fluxo de caracteres escrito em código-fonte de um programa e traduzido para um
 conjunto de Tokens. Estes tokens são sequências de caracteres que têm um significado coletivo (Aho, Sethi e Ullman).
@@ -26,4 +29,3 @@ Obs: Em algumas linguagens como o Python, a identação é significante e deve s
 
 1. "Writing an Interpreter in Go" by Thorsten Ball
 2. "Compilers, Principles, Techniques and Tools" by Aho, Sethi e Ullman (Dragon's cover book)
-3. ""
