@@ -8,7 +8,7 @@ import (
 	"io"
 )
 
-const PROMPT = ">>"
+const PROMPT = ">> "
 
 func Start(in io.Reader, out io.Writer) {
 	scanner := bufio.NewScanner(in)
@@ -18,6 +18,7 @@ func Start(in io.Reader, out io.Writer) {
 		scanned := scanner.Scan()
 		if !scanned {
 			return
+
 		}
 
 		line := scanner.Text()
