@@ -1,6 +1,8 @@
 package token
 
-import "go/token"
+import (
+	"force-yourself-write-a-compiler/ast"
+)
 
 //Constraints for words
 const (
@@ -58,9 +60,9 @@ type Token struct {
 }
 
 type LetStatement struct {
-	Token token.Token
+	Token Token
 	Name  *Identifier
-	Value Expression
+	Value ast.Expression
 }
 
 func (ls *LetStatement) statementNode() {}
@@ -70,11 +72,12 @@ func (ls *LetStatement) TokenLiteral() string {
 }
 
 type Identifier struct {
-	Token token.Token
+	Token Token
 	Value string
 }
 
 func (i *Identifier) expressionNode() {}
+
 func (i *Identifier) TokenLiteral() string {
 	return i.Token.Literal
 }
